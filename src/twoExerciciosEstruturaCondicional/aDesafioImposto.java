@@ -27,27 +27,27 @@ public class aDesafioImposto {
         salarioMensal = rendaSalario /12;
 
         if(salarioMensal > 3000.00 && salarioMensal < 5000.00){
-            impostoSalario = rendaSalario * (10.0 / 100);
+            impostoSalario = rendaSalario * (10.0 / 100); //taxa 10%
         } else if (salarioMensal > 5000.00){
-            impostoSalario = rendaSalario * (20.0 / 100);
+            impostoSalario = rendaSalario * (20.0 / 100); //taxa 20%
         } else {
             impostoSalario = 0;
         }
 
         //Calculando Imposto sobre Serviço Usando expressão ternária.
 
-        impostoServico = (rendaServico > 0) ? rendaServico * 0.15 : 0;
+        impostoServico = (rendaServico > 0) ? rendaServico * 0.15 : 0; //taxa 15%
 
         //Calculando Imposto sobre Ganho de Capital Usando expressão ternária.
 
-        impostoCapital = (rendaGanhoCapital > 0) ? rendaGanhoCapital * 0.2 : 0;
+        impostoCapital = (rendaGanhoCapital > 0) ? rendaGanhoCapital * 0.2 : 0; //taxa 20%
 
 
         //Calculos gerais impostos e deduções.
 
         impostoBrutoTotal = impostoSalario + impostoServico + impostoCapital;
         gastosDedutiveis = gastoMedico + gastoEducacional;
-        maximoDedutivel = impostoBrutoTotal * 0.3;
+        maximoDedutivel = impostoBrutoTotal * 0.3; // 30%
 
 
         //Calculo abatimento
