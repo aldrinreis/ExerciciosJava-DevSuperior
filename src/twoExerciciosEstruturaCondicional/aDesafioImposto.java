@@ -56,6 +56,7 @@ public class aDesafioImposto {
         }else{
             abatimento = gastosDedutiveis;
         }
+        // abatimento = Math.min(gastosDedutiveis, maximoDedutivel);
 
         impostoDevido = impostoBrutoTotal - abatimento;
 
