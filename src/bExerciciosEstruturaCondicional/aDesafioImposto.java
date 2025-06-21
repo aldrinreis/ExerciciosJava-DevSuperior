@@ -26,9 +26,9 @@ public class aDesafioImposto {
 
         salarioMensal = rendaSalario /12;
 
-        if(salarioMensal > 3000.00 && salarioMensal < 5000.00){
+        if(salarioMensal >= 3000.00 && salarioMensal < 5000.00){
             impostoSalario = rendaSalario * (10.0 / 100); //taxa 10%
-        } else if (salarioMensal > 5000.00){
+        } else if (salarioMensal >= 5000.00){
             impostoSalario = rendaSalario * (20.0 / 100); //taxa 20%
         } else {
             impostoSalario = 0;
